@@ -1,0 +1,24 @@
+# HarvardX: PH125.5x
+# Data Science: Productivity Tools
+# Looking at a file
+
+
+###
+
+
+# less
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ less abc
+
+abc
+abc (END)
+
+# press 'q' to exit
+
+
+# first version being more as 'show me more'
+# second version become less as 'less is more'
+
+
+###
