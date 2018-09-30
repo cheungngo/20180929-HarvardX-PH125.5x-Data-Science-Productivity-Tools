@@ -1,0 +1,35 @@
+---
+title: "20181001c gitclone"
+author: "cheungngo"
+date: "October 1, 2018"
+output: word_document
+---
+
+
+## git clone
+
+Target: https://github.com/rairizarry/murders
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ mkdir murders
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ cd murders
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders (master)
+$ git clone https://github.com/rairizarry/murders
+Cloning into 'murders'...
+remote: Enumerating objects: 19, done.
+remote: Total 19 (delta 0), reused 0 (delta 0), pack-reused 19
+Unpacking objects: 100% (19/19), done.
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders (master)
+$ ls
+murders
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders (master)
+$ cd murders
+
+> cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)
+$ ls
+README.txt  analysis.R  data  download-data.R  murders.Rproj  rdas  report.Rmd  report.md  report_files  wrangle-data.R
