@@ -1,0 +1,121 @@
+# HarvardX: PH125.5x
+# Data Science: Productivity Tools
+# Unix Commands
+
+
+###
+
+
+# ls
+# looking at the content of the directory
+
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ ls
+'20180929 Introduction to Unix'   '20180929 Testing'    HarvardX-PH125.5x-Data-Science-Productivity-Tools.Rproj
+'20180929 Introduction to Unixb'  '20180929a Testing'
+
+
+###
+
+
+# mkdir and rmdir
+
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ mkdir testing
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ ls
+'20180929 Introduction to Unix'   '20180929 Testing'    HarvardX-PH125.5x-Data-Science-Productivity-Tools.Rproj
+'20180929 Introduction to Unixb'  '20180929a Testing'   testing
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ rmdir testing
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ ls
+'20180929 Introduction to Unix'   '20180929 Testing'    HarvardX-PH125.5x-Data-Science-Productivity-Tools.Rproj
+'20180929 Introduction to Unixb'  '20180929a Testing'
+
+
+###
+
+
+# auto-complete
+
+# initial letters, then 'tab'
+
+
+###
+
+
+# moving back to the parent directory of the parent directory
+
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)
+$ cd project
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/project (master)
+$ cd ../..
+
+cheun@DESKTOP-1JC77EH  ~/Documents
+$
+
+
+###
+
+
+# cd -
+# moving back to the dir you just left
+
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/project (master)
+$ cd ../..
+
+cheun@DESKTOP-1JC77EH  ~/Documents
+$ cd -
+/c/Users/cheun/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/project
+
+cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/project (master)
+
+
+###
+
+
+# mv
+
+
+# What happens when you execute the “move” (mv) command to move the file into the new directory?
+# The moved "assignment.txt" file replaces the old "assignment.txt" file that was in the "projects" directory with no warning
+
+
+# mv having two commands
+# first specify the file
+# second specify the destination / new name of the file (or combined)
+
+
+# if you want to move a dir
+# you should add slash after the destinated dir
+# or else the destinated dir will be replaced
+
+
+###
+
+
+# cp
+
+# just copy instead of cut and paste
+
+
+###
+
+
+# rm
+
+# remove a file (not dir yet)
+# can list the file after rm
+# permanent
+
+
+###
