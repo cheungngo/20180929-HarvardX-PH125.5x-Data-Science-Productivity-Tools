@@ -1,0 +1,54 @@
+---
+title: "20181002c advanced unix args wildcards"
+author: "cheungngo"
+date: "October 2, 2018"
+output: word_document
+---
+
+
+###
+
+
+## Advanced Unix Wildcards
+
+
+###
+
+
+## Wildcards  
+You have a directory containing the following files.
+
+>data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv 
+
+Which command will list only all of the .txt files that have “data” in their name? Remember that commands are case-sensitive.
+
+### ls data*.txt
+
+
+###
+
+
+## Wildcards 2
+You have a directory containing the following files.  
+
+>data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv  
+
+Which command will remove every file that begins with “D”?  
+
+### rm D*
+
+
+###
+
+
+## Wildcards 3
+Imagine you have multiple text files in the following directory: /Users/student/Documents/project.  
+You enter the following commands in sequence:  
+
+>mkdir data  
+mv *.txt data  
+cd data  
+
+What will be printed to the screen if you enter the ls command after executing the three lines of code shown above?
+
+### The file names that were moved from the “project” directory into the “data” directory.
