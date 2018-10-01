@@ -1,0 +1,95 @@
+---
+title: "20181002 advanced Unix arguments"
+author: "cheungngo"
+date: "October 2, 2018"
+output: word_document
+---
+
+
+## Arguments
+
+### What will the command ls -lat produce?
+
+* A list of all file (names, sizes, and other information) arranged in chronological order with the most recently modified files at the top of the list.  
+  
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)  
+$ ls -lat  
+total 19  
+drwxr-xr-x 1 cheun 197609   0 Oct  2 01:18 .git  
+drwxr-xr-x 1 cheun 197609   0 Oct  1 03:55 .  
+-rw-r--r-- 1 cheun 197609 222 Oct  1 03:55 wrangle-data.R  
+drwxr-xr-x 1 cheun 197609   0 Oct  1 03:55 report_files  
+-rw-r--r-- 1 cheun 197609 684 Oct  1 03:55 report.md  
+-rw-r--r-- 1 cheun 197609 951 Oct  1 03:55 report.Rmd  
+-rw-r--r-- 1 cheun 197609 169 Oct  1 03:55 download-data.R  
+-rw-r--r-- 1 cheun 197609 218 Oct  1 03:55 murders.Rproj  
+drwxr-xr-x 1 cheun 197609   0 Oct  1 03:55 rdas  
+drwxr-xr-x 1 cheun 197609   0 Oct  1 03:55 data  
+-rw-r--r-- 1 cheun 197609 235 Oct  1 03:55 analysis.R  
+-rw-r--r-- 1 cheun 197609 278 Oct  1 03:55 README.txt  
+-rw-r--r-- 1 cheun 197609  44 Oct  1 03:55 .gitignore  
+drwxr-xr-x 1 cheun 197609   0 Oct  1 03:55 ..  
+
+
+###
+
+
+## rm-r
+### What happens when you remove a directory using the command rm -r?
+* You permanently remove the entire directory, including all files and subdirectories
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)  
+$ mkdir test
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)  
+$ cd test
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders/test (master)  
+$ echo "testing" > abc.txt
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders/test (master)  
+$ ls -lat  
+total 5  
+-rw-r--r-- 1 cheun 197609 8 Oct  2 01:24 abc.txt  
+drwxr-xr-x 1 cheun 197609 0 Oct  2 01:24 .  
+drwxr-xr-x 1 cheun 197609 0 Oct  2 01:24 ..  
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders/test (master)  
+$ cd ..
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)  
+$ rm -r test
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools/murders/murders (master)  
+$ ls  
+README.txt  analysis.R  data  download-data.R  murders.Rproj  rdas  report.Rmd  report.md  report_files  wrangle-data.R 
+
+#### The 'test' folder is gone
+
+
+###
+
+
+## Other skills in the tutoria
+* -f 
+
+> force removal of protected files (e.g. rm -rf for force removal of a folder)
+
+* -a 
+
+> a for all  
+> ls -a showing the hidden files
+
+* -l 
+
+> a for long  
+> ls -l showing more info
+
+* -t and -r
+
+> -t for time  
+> -r for reverse  
+> ls -t showing things in chrono order  
+> ls -r reverse the order  
+
+### So the ls -lat in the above example would be 'long' 'all' 'time'
