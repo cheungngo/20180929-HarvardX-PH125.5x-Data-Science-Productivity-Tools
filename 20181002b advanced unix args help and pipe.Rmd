@@ -1,0 +1,36 @@
+---
+title: "20181002b advanced args help and pipe"
+author: "cheungngo"
+date: "October 2, 2018"
+output: word_document
+---
+
+
+###
+
+
+## Getting Help and Pipes  
+By default, the head command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.  
+Which of the following commands displays only the first 6 lines of a manual for the ls command?  
+* man ls | head -6  
+
+####
+
+## ls --help
+### the R (gitbash) version of man ls
+* normally ls --help would give a very lengthy documents directly printed onto the terminal
+* we may need to print it into a txt file to get a better result  
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)  
+$ ls --help > ls_help.txt  
+
+## the need of pipe '|'
+* we can use pipe to make us easier reading the help file  
+
+>cheun@DESKTOP-1JC77EH  ~/Documents/HarvardX-PH125.5x-Data-Science-Productivity-Tools (master)  
+$ ls --help | head -6  
+Usage: ls [OPTION]... [FILE]...  
+List information about the FILEs (the current directory by default).  
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.  
+Mandatory arguments to long options are mandatory for short options too.  
+  -a, --all                  do not ignore entries starting with .  
